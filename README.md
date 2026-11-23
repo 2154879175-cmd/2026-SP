@@ -1,4 +1,13 @@
-﻿# 北京市平谷区冬小麦-夏玉米轮作体系 环境指纹×机器学习育种模型 | Environmental Fingerprint × Machine Learning Breeding Model for the Winter Wheat–Summer Maize Rotation System in Pinggu, Beijing
+# 华北冬小麦单产预测的时空泛化：环境指纹机器学习与产量标签来源对照
+
+*Spatiotemporal Generalization of Winter Wheat Yield Prediction in the North China Plain: Environmental Fingerprint Models Across Yield Data Sources*
+
+主研究区为华北平原冬小麦主产区。使用县年统计与遥感反演单产比较相同模型的跨区、跨年表现，并探索独立站点观测验证。当前处于样本配对与数据核验阶段。平谷分析是项目的前期诊断。
+
+- [W40 选题、文献对照、发表条件与研究设计](ManageFiles/W40_华北题目与发表研究方案.md)
+- [新增华北数据、校验值与复现说明](Data/external/crop_yield_ncp.md)
+
+## 平谷前期研究与版本记录
 
 > 空间显式、多维度的产量预测与农艺措施优化 —— 以北京平谷区 234 网格环境指纹矩阵为基础（26SP 项目大纲原题目）
 >

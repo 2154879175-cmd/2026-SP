@@ -51,3 +51,5 @@ Data/*.tif
 # Local source data for the crop-area and station-yield experiments
 /Data/CropArea_figshare/download/
 /Data/CMA_agromet/download/
+/Data/external/china_yield_centurial/download/
+/Data/external/wheatmap_ncp/download/
