@@ -1,0 +1,211 @@
+{
+  "2017": {
+    "source_url": "https://zenodo.org/records/7360753/files/2017ChinaWheatYield30m.tif?download=1",
+    "source_size_bytes": 1344570264,
+    "boundary_names": [
+      "Daiyue District",
+      "Dongping County",
+      "Feicheng City",
+      "Ningyang County",
+      "Taishan District",
+      "Xintai City"
+    ],
+    "byte_ranges": [
+      {
+        "start": 0,
+        "end_exclusive": 1920201,
+        "sha256": "7774c3afd43a43c566087b3f7b399d3f81ce6dfb22e94ada421f221f342da801"
+      },
+      {
+        "start": 503119497,
+        "end_exclusive": 503163670,
+        "sha256": "623796e1d20b49a2cb6435f29ca53707589aa97337118258eb4b691c2ba0b95b"
+      },
+      {
+        "start": 510007241,
+        "end_exclusive": 510040072,
+        "sha256": "e2a848ff22288082fb45060bb9148716ec6f632aba801b10be0e7254c330608e"
+      },
+      {
+        "start": 515585889,
+        "end_exclusive": 515739133,
+        "sha256": "f3c6228f43410235464e2714686f41e0f35c5df9fdefcb2e7cdb2c1af7ef5793"
+      },
+      {
+        "start": 521919769,
+        "end_exclusive": 522424735,
+        "sha256": "93d512b0d566897f11f2fc0e67a9fc41a5ae7deae2f767082f492f5ddf885279"
+      },
+      {
+        "start": 528406417,
+        "end_exclusive": 529687939,
+        "sha256": "3131c5fec52a3d2d215af9fee1d0bb6a017a969d17921b4d94da289e0b858b85"
+      },
+      {
+        "start": 536629320,
+        "end_exclusive": 537839423,
+        "sha256": "ef0e15ba8ca4d4f2d2f797c67d82bb9377aca518317573ae20b4b0da0cccedf1"
+      },
+      {
+        "start": 545278548,
+        "end_exclusive": 546808398,
+        "sha256": "1129812a8c9e628e2ecee415dd1af988f919559a045cac85c96f016f9e58b847"
+      },
+      {
+        "start": 552767180,
+        "end_exclusive": 554438262,
+        "sha256": "1862a3785f8922f51e69628e39129b90285d3071acd0964a22ec3f4cd78e1bd3"
+      },
+      {
+        "start": 559721190,
+        "end_exclusive": 561530471,
+        "sha256": "ac04195ac437189d42371a15f6f05206fa3218446d0554a392c80a793af05e40"
+      },
+      {
+        "start": 566284590,
+        "end_exclusive": 568044569,
+        "sha256": "b324bd7c49e056d9346b14b34f460dd89ba132832eb87d19377217ef528a2771"
+      },
+      {
+        "start": 573166077,
+        "end_exclusive": 574640125,
+        "sha256": "588cf862ff62d9b0e9989243934ce00ab42dfbae70ad0860ca9dfc7eea6003b1"
+      },
+      {
+        "start": 581878201,
+        "end_exclusive": 583183287,
+        "sha256": "97eb572fb7eaf13f78d1c2b59336a075c2f8dbe801161c70836dced812be6bee"
+      },
+      {
+        "start": 592240656,
+        "end_exclusive": 592520957,
+        "sha256": "35030f50fde19138f891cca3004cc35e9891f4bbbbf3f5b898ab8ca9a6fd41c8"
+      }
+    ]
+  },
+  "2021": {
+    "source_url": "https://zenodo.org/records/7360753/files/2021ChinaWheatYield30m.tif?download=1",
+    "source_size_bytes": 1140993469,
+    "boundary_names": [
+      "Daiyue District",
+      "Dongping County",
+      "Fangshan District",
+      "Feicheng City",
+      "Ningyang County",
+      "Taishan District",
+      "Xintai City"
+    ],
+    "byte_ranges": [
+      {
+        "start": 0,
+        "end_exclusive": 711001,
+        "sha256": "a9bdde44d27eafc12d9942eb7c2acb1ccf0f6a4b9c02714df6a9366a4d4d5ffc"
+      },
+      {
+        "start": 29485586,
+        "end_exclusive": 29509878,
+        "sha256": "3a5fb0535bffb9df1d728cf9fcb92cb7af3d52230af7008be6b41a4825f40b9d"
+      },
+      {
+        "start": 30927583,
+        "end_exclusive": 30952726,
+        "sha256": "b98299e94b5bf76b403b8e5a1cf161b7fb054ed1d5d976639f5f1d33e73334d3"
+      },
+      {
+        "start": 32446743,
+        "end_exclusive": 32471147,
+        "sha256": "76532e973925ef024a0590ce5da4233c517884bee69ab13ab3aac4e8dca43a2e"
+      },
+      {
+        "start": 34175019,
+        "end_exclusive": 34199517,
+        "sha256": "e7908e80e3c7793cb9cdf634c0aca84dd04f39b8f49e9ad789f04c7bce118e61"
+      },
+      {
+        "start": 35906423,
+        "end_exclusive": 35934080,
+        "sha256": "9ef8c09e5eca0ca3365894852fc77d6c72b0199b423bacd180b0a9dfa4f191a9"
+      },
+      {
+        "start": 38052004,
+        "end_exclusive": 38234564,
+        "sha256": "194e4f96bacf76f0c72673af91ddf4e55436df0755e3480136b8e55d5dcf474d"
+      },
+      {
+        "start": 40168406,
+        "end_exclusive": 40427291,
+        "sha256": "b776be3a093ae236d6e7eff3dce2df526dbfd3430edcca1b7d0ec936a2e603ca"
+      },
+      {
+        "start": 266183514,
+        "end_exclusive": 266238436,
+        "sha256": "5ff2d28b276865928a946dca9563bcdecd89296500458fa31e557fdbffaa1307"
+      },
+      {
+        "start": 272537806,
+        "end_exclusive": 272575472,
+        "sha256": "72a6da72e1167b058a2c438a508671a0b54b50d25cc5eee04420756ebfaef938"
+      },
+      {
+        "start": 278121153,
+        "end_exclusive": 278155311,
+        "sha256": "2ffb7c312ab19c2e9cbd0f9110e7f523267439a0a623605cb4563ebe57846b66"
+      },
+      {
+        "start": 283573822,
+        "end_exclusive": 283748152,
+        "sha256": "8082ed19571b5a5f5f717432d05b173dde2f53a765940a87da16aa9a1391b24a"
+      },
+      {
+        "start": 289489903,
+        "end_exclusive": 289907094,
+        "sha256": "c6fec8e96412e5c169876126f6e1889bd224dcadf9453ab16ec2790867769928"
+      },
+      {
+        "start": 295351768,
+        "end_exclusive": 296509094,
+        "sha256": "4a98d06809fe7aadb445428ac2870e80cd9bdf1557a49f0f1c2ec8f21465299f"
+      },
+      {
+        "start": 301752002,
+        "end_exclusive": 302940037,
+        "sha256": "816d2b4201f799a8953065ed9066e8842a751c37ff6be40d862783d7f02f2c57"
+      },
+      {
+        "start": 308200404,
+        "end_exclusive": 309855365,
+        "sha256": "0a72e4ab87b5db2b0676d88ce7d0d315ae4e5ee8ad65b2be5985d3b1ea47b835"
+      },
+      {
+        "start": 314440392,
+        "end_exclusive": 316677810,
+        "sha256": "97be3390569014939fc02bc943c6056c1b2e9766b541996ad00da5500a3bad7a"
+      },
+      {
+        "start": 320862501,
+        "end_exclusive": 323352702,
+        "sha256": "f215cc15d990ce27fa377921fd554d75857d95334b32c84671a6cf0b0781b605"
+      },
+      {
+        "start": 327441983,
+        "end_exclusive": 329829223,
+        "sha256": "f9543a2f86c1b1ea4da4d61a8a2be9a7b907de696242b206b87dabf969584f1e"
+      },
+      {
+        "start": 334744971,
+        "end_exclusive": 337159862,
+        "sha256": "6af44c943174a56a78bb0528ab2c42719d70f09b03de04bf7e3eaf127180588d"
+      },
+      {
+        "start": 344994245,
+        "end_exclusive": 346862950,
+        "sha256": "d4c8517f10301c8dad8b1db953aca4440de70c584df6a301fd7664086bbbee20"
+      },
+      {
+        "start": 356017876,
+        "end_exclusive": 356240442,
+        "sha256": "b92ed6a87917fe358ea47c1a278f1151e941e4aaa8afbaf17c961eb832b77bfd"
+      }
+    ]
+  }
+}
