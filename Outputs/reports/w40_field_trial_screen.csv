@@ -1,0 +1,15 @@
+crop_label,year_sampling,treatment_rows,studies,sites,rows_with_sowing,rows_with_maturity,rows_with_n_rate
+Maize,2016-2021,394,41,53,161,6,343
+Maize,2016,82,17,14,37,2,81
+Maize,2017,84,19,15,41,2,79
+Maize,2018,66,18,16,18,2,65
+Maize,2019,55,11,22,16,0,34
+Maize,2020,71,13,19,33,0,53
+Maize,2021,36,9,12,16,0,31
+Wheat,2016-2021,432,47,40,119,5,384
+Wheat,2016,137,27,19,34,2,121
+Wheat,2017,96,23,15,19,1,88
+Wheat,2018,66,19,15,16,2,64
+Wheat,2019,61,17,25,16,0,42
+Wheat,2020,54,9,9,28,0,51
+Wheat,2021,18,6,5,6,0,18
