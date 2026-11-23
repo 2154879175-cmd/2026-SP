@@ -1,4 +1,4 @@
-# 投稿清单（Agronomy / MDPI）与教师包目录
+# 投稿清单（Computers and Electronics in Agriculture / Elsevier）与教师包目录
 
 ## A. MDPI 投稿清单（Submission Checklist）
 
@@ -6,7 +6,7 @@
 |---|---|---|
 | 1 | 主文稿（IMRaD+Declarations，摘要 ≤210 词，14 refs） | ✅ Manuscript_v5.0_fulltext.md |
 | 2 | Title Page（作者/单位/通讯/ORCID 占位） | ✅（姓名 ORCID 待团队补录） |
-| 3 | Cover Letter（EN） | ✅ |
+| 3 | Cover Letter（EN，CEA 版） | ✅ |
 | 4 | 图 17 幅（600dpi TIFF + 矢量 PDF） | ✅ Outputs/figures/main/ |
 | 5 | Graphical Abstract（可选，鼓励） | ✅ graphical_abstract.png |
 | 6 | Supplementary（S1 自评表 + S2–S4 台账包 + 索引） | ✅ Supplementary_index.md |

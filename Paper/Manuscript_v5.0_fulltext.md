@@ -1,6 +1,6 @@
 # The Trap of Model-Derived Yield Targets: A Controlled Diagnostic of Target Construction, Validation Design, and Co-Construction Bias in County-Scale Yield Mapping
 
-**Full-text manuscript v5.0** | 2026-10-21 | Target: Agronomy (MDPI), Section: Precision and Digital Agriculture / Methods
+**Full-text manuscript v5.0.1** | 2026-11-23 | Target: Computers and Electronics in Agriculture (Elsevier, hybrid; subscription route = no author fees). Previous target: Agronomy (MDPI) - switched for APC reasons (approx. 2,600 CHF)
 
 > Status: prose under construction (W27 writing loop). Structure and all numbers traceable to frozen ledgers (Outputs/intermediate/w14–w26 series). Figure plan: figs 01–17 (main), S1 protocol self-assessment.
 
