@@ -53,3 +53,4 @@ Data/*.tif
 /Data/CMA_agromet/download/
 /Data/external/china_yield_centurial/download/
 /Data/external/wheatmap_ncp/download/
+/Data/external/ncp_yield_pairing/download/

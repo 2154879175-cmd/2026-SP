@@ -6,6 +6,7 @@
 
 - [W40 选题、文献对照、发表条件与研究设计](ManageFiles/W40_华北题目与发表研究方案.md)
 - [新增华北数据、校验值与复现说明](Data/external/crop_yield_ncp.md)
+- [W41 县年产量配对试点](Data/external/w41_county_yield_pairing.md) · [阶段评审](ManageFiles/W41_五轮阶段评审.md)
 
 ## 平谷前期研究与版本记录
 
