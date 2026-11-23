@@ -1,0 +1,4 @@
+model,n_centres,n_held_out_area_pixels,pooled_r2,rmse_tha,mae_tha
+fold_mean,22,7,-0.20154277,0.25591137,0.23125693
+environment,22,7,0.03618755,0.22920085,0.19064776
+environment_plus_area,22,7,0.01590834,0.23159956,0.19295916
