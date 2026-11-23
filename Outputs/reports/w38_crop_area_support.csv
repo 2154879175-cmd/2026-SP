@@ -1,0 +1,17 @@
+year,crop,subset,grid_centres,centres_with_valid_area,centres_with_positive_area,distinct_area_pixels,distinct_positive_area_pixels
+2016,wheat,pinggu_all,234,234,218,54,50
+2016,maize,pinggu_all,234,234,212,54,49
+2017,wheat,pinggu_all,234,234,218,54,50
+2017,maize,pinggu_all,234,234,212,54,49
+2018,wheat,pinggu_all,234,234,218,54,50
+2018,maize,pinggu_all,234,234,218,54,50
+2019,wheat,pinggu_all,234,234,196,54,45
+2019,maize,pinggu_all,234,234,218,54,50
+2020,wheat,pinggu_all,234,234,218,54,50
+2020,maize,pinggu_all,234,234,218,54,50
+2021,wheat,pinggu_all,234,234,208,54,48
+2021,wheat,pinggu_rs_yield_2021,22,22,22,7,7
+2021,maize,pinggu_all,234,234,218,54,50
+2021,maize,pinggu_rs_yield_2021,22,22,22,7,7
+2022,wheat,pinggu_all,234,234,214,54,49
+2022,maize,pinggu_all,234,234,212,54,49
