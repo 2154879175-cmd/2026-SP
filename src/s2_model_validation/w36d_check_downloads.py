@@ -1,60 +1,76 @@
 # -*- coding: utf-8 -*-
-"""W36d: validator for user-downloaded datasets (figshare China crop-area TIFs +
-CMA yield tables). Runs anytime; reports what arrived and what's still needed."""
-import os, glob, json, warnings
-import numpy as np
-warnings.filterwarnings("ignore")
+"""Verify the Figshare v4 China files against the publisher manifest and inventory CMA."""
+import argparse
+import csv
+import hashlib
+import json
+import shutil
+from pathlib import Path
+from urllib.request import urlopen
 
-ROOT = r"D:\2026-SP"
-FIG_DL = os.path.join(ROOT, "Data", "CropArea_figshare", "download")
-CMA_DL = os.path.join(ROOT, "Data", "CMA_agromet", "download")
-report = {"figshare": {"found": [], "missing": []}, "cma": {"found": [], "note": ""}}
+ROOT = Path(__file__).resolve().parents[2]
+FIGSHARE = ROOT / "Data" / "CropArea_figshare"
+FIG_DL = FIGSHARE / "download"
+CMA_DL = ROOT / "Data" / "CMA_agromet" / "download"
+MIN_YEARS = range(2016, 2023)
 
-# ---- figshare: China_[year].tif files ----
-WANT_YEARS = list(range(2016, 2023))          # panel/RS overlap years (minimum)
-OPT_YEARS = [y for y in range(1980, 2023) if y not in WANT_YEARS]
-tif_all = sorted(glob.glob(os.path.join(FIG_DL, "**", "*.tif"), recursive=True) +
-                 glob.glob(os.path.join(FIG_DL, "**", "*.tif.gz"), recursive=True))
-print(f"[figshare] TIF files found: {len(tif_all)}")
-for fp in tif_all:
-    base = os.path.basename(fp)
-    report["figshare"]["found"].append(base)
-try:
-    import rasterio
-    have_years = []
-    for fp in tif_all:
-        base = os.path.basename(fp)
-        yr = "".join(ch for ch in base if ch.isdigit())[:4]
-        have_years.append(yr)
-        with rasterio.open(fp) as s:
-            bands = s.count
-            desc = s.descriptions
-            print(f"  {base}: {s.width}x{s.height}, {bands} bands, epsg={s.crs}, "
-                  f"band names={list(desc)[:16]}")
-        if s.width > 4000 or s.height > 2000:
-            print("    [warn] unexpected global raster size")
-    missing = [y for y in WANT_YEARS if str(y) not in have_years]
-    print("  coverage vs needed years 2016-2022:", "OK" if not missing else f"missing {missing}")
-    report["figshare"]["missing"] = missing
-except ImportError:
-    print("  (rasterio check skipped)")
-except Exception as e:
-    print("  [warn] tif inspection:", type(e).__name__)
 
-for y in WANT_YEARS:
-    if not any(str(y) in f for f in tif_all):
-        report["figshare"]["missing"].append(y)
+def matches(path, entry):
+    if not path.is_file() or path.stat().st_size != int(entry["size"]):
+        return False
+    with path.open("rb") as source:
+        return hashlib.file_digest(source, "md5").hexdigest() == entry["computed_md5"]
 
-# ---- CMA: scan download dir ----
-cma_files = sorted(glob.glob(os.path.join(CMA_DL, "**", "*.*"), recursive=True))
-print(f"[CMA] files found: {len(cma_files)}")
-if cma_files:
-    print("  run: python src/s2_model_validation/w36_cma_ingest.py  (station discovery)")
-    for f in cma_files[:20]:
-        report["cma"]["found"].append(os.path.basename(f))
-else:
-    print("  empty - download from data.cma.cn (search 农业气象观测年报 / 作物产量)")
 
-out = os.path.join(ROOT, "Outputs", "intermediate", "w36d_download_status.json")
-json.dump(report, open(out, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
-print("status ->", out)
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--download", action="store_true", help="Fetch missing or invalid Figshare files")
+    args = parser.parse_args()
+
+    with (FIGSHARE / "figshare_v4_manifest.csv").open(encoding="utf-8-sig", newline="") as source:
+        entries = list(csv.DictReader(source))
+    found, invalid, missing = [], [], []
+    for entry in entries:
+        name = entry["name"]
+        path = FIG_DL / name
+        if args.download and not matches(path, entry):
+            FIG_DL.mkdir(parents=True, exist_ok=True)
+            part = path.with_suffix(path.suffix + ".part")
+            with urlopen(entry["download_url"], timeout=60) as source, part.open("wb") as dest:
+                shutil.copyfileobj(source, dest)
+            if matches(part, entry):
+                part.replace(path)
+            else:
+                raise ValueError(f"Figshare size or MD5 mismatch: {name}")
+        if matches(path, entry):
+            found.append(name)
+        elif path.exists():
+            invalid.append(name)
+        else:
+            missing.append(name)
+
+    missing_min_years = [year for year in MIN_YEARS if f"CHN_{year}.tif" not in found]
+    cma_files = sorted(str(path.relative_to(CMA_DL)) for path in CMA_DL.rglob("*") if path.is_file())
+    report = {
+        "figshare": {
+            "version": 4, "found": found, "invalid": invalid, "missing": missing,
+            "missing_2016_2022": missing_min_years,
+        },
+        "cma": {
+            "found": cma_files,
+            "note": "Inspect the yield files with w36_cma_ingest.py" if cma_files
+            else "No local station yield files found",
+        },
+    }
+    out = ROOT / "Outputs" / "intermediate" / "w36d_download_status.json"
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    print(f"[figshare] {len(found)}/{len(entries)} verified; {len(invalid)} invalid; {len(missing)} missing")
+    print(f"[figshare] missing 2016–2022: {missing_min_years}")
+    print(f"[CMA] {len(cma_files)} local files")
+    print(f"status -> {out}")
+    return bool(invalid or missing)
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
