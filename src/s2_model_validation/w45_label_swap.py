@@ -25,7 +25,9 @@ def model_set():
 
 
 def predictions(panel, folds, features=FEATURES):
-    indexed = panel.set_index(KEY, verify_integrity=True)
+    indexed = panel.set_index(KEY)
+    if not indexed.index.is_unique:
+        raise ValueError("Panel contains duplicate county-year keys")
     output = []
     for (scenario, scheme, fold), assignment in folds.groupby(["scenario", "scheme", "fold"], sort=False):
         train = indexed.loc[pd.MultiIndex.from_frame(assignment.loc[assignment.role.eq("train"), KEY])]
