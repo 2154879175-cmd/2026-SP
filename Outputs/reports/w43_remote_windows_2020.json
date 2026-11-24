@@ -1,0 +1,247 @@
+{
+  "source": "https://zenodo.org/records/7360753/files/2020ChinaWheatYield30m.tif?download=1",
+  "size_bytes": 1161043745,
+  "shape_ids": [
+    "62558664B19017699647777",
+    "62558664B20399275645018",
+    "62558664B21505813865791",
+    "62558664B23456700547879",
+    "62558664B2427175042166",
+    "62558664B26028298514379",
+    "62558664B28128678550723",
+    "62558664B39400106445584",
+    "62558664B47734453637531",
+    "62558664B5316170657416",
+    "62558664B53891602886125",
+    "62558664B56936156846755",
+    "62558664B61183233454019",
+    "62558664B63422988053512",
+    "62558664B76599192346331",
+    "62558664B87645971027140",
+    "62558664B91235384872038",
+    "62558664B94786214414637",
+    "62558664B98712335692641"
+  ],
+  "byte_ranges": [
+    {
+      "start": 0,
+      "end_exclusive": 2500000,
+      "sha256": "42413d5a0531546eb51bd6038fd2c01e49fe5bc9db4c02fd130f1fbcaa2f8327"
+    },
+    {
+      "start": 29157590,
+      "end_exclusive": 29181891,
+      "sha256": "ff36f5de3e2ae3320a2b518f39de8f62cf20c9a4036e358be3d0501c116bed75"
+    },
+    {
+      "start": 30630439,
+      "end_exclusive": 30654886,
+      "sha256": "a0708ad4c606a6d107b43bc5b67aa232813f9ada413ac3ed9f9ee16f79cd0a3b"
+    },
+    {
+      "start": 32151820,
+      "end_exclusive": 32176201,
+      "sha256": "53ff56bbda3daa208b01900db5bbe34bd09afb42e15f99a5e6dc4c349554be6c"
+    },
+    {
+      "start": 33921188,
+      "end_exclusive": 33945668,
+      "sha256": "00e70de301c92f640f20df0c5d33ebff057042af4072c63a132c920f77598f9f"
+    },
+    {
+      "start": 35686818,
+      "end_exclusive": 35714119,
+      "sha256": "8e6f641df1131d23aab7b3e0d5b147f43f917dbb64a9f3bd6029cb6a13587cde"
+    },
+    {
+      "start": 37950602,
+      "end_exclusive": 38146631,
+      "sha256": "f36c769f8fb5c9c5b6978b29f22a2ed21bb18afaabcaceb1d4d28c218f9e021e"
+    },
+    {
+      "start": 40282186,
+      "end_exclusive": 40580535,
+      "sha256": "8cfffd52f83c9b980d93045e957c77332baa2dfc8169e2cdf2be73517ee7e3a3"
+    },
+    {
+      "start": 59808713,
+      "end_exclusive": 59832490,
+      "sha256": "5e4a6dedfb4727e55c547a4be2668845bfe661fbd8f6044d4d5e8d2748332875"
+    },
+    {
+      "start": 62594433,
+      "end_exclusive": 62634982,
+      "sha256": "ada11adf6310ae76046fdaedda41e464d0edac11b91830a5103a03be80b01ea4"
+    },
+    {
+      "start": 65549542,
+      "end_exclusive": 65598858,
+      "sha256": "be70bb1606502a6f276610ec01f428d5a083ea43ccb33952f2f23b314f998196"
+    },
+    {
+      "start": 68555906,
+      "end_exclusive": 68680257,
+      "sha256": "7cc5ab8fb024c3f4c9260f0df78b369d1aeada008cf0fb8677db378aefe274d2"
+    },
+    {
+      "start": 71499168,
+      "end_exclusive": 72504778,
+      "sha256": "e6112701bc713bbecbfc1c2882d5d6f2034881bc98115f21bcd1000c843320c7"
+    },
+    {
+      "start": 75091803,
+      "end_exclusive": 76293917,
+      "sha256": "2a8b5ed1a22f71ef406a1ce819f00f9cf2a3a12f9630a32d146bf648960ad523"
+    },
+    {
+      "start": 78789288,
+      "end_exclusive": 79874537,
+      "sha256": "8eb0494cc5461d2f659c4c6e39509978b026f2958f417217fa0cc07779824e57"
+    },
+    {
+      "start": 82798573,
+      "end_exclusive": 84999485,
+      "sha256": "088e8d79af7cb155cb429aa62e9eff43eda2d98fee2126ff8ceef2002697bfed"
+    },
+    {
+      "start": 86897006,
+      "end_exclusive": 89173986,
+      "sha256": "93786b82072e5a80e9b156d7d012181811c3bfeadba99faed60ed1aa442e582a"
+    },
+    {
+      "start": 90983687,
+      "end_exclusive": 92708037,
+      "sha256": "8bc7f58da893886c62ac2ed1e8af1683f8035c86e72a69fd5fc65fb746e853a9"
+    },
+    {
+      "start": 95038830,
+      "end_exclusive": 96515115,
+      "sha256": "29ab856e67b391bc9a3938c6075b0b1042fab578a4ef80ca827c63da7ec93387"
+    },
+    {
+      "start": 99670212,
+      "end_exclusive": 100386979,
+      "sha256": "1f485b7c05bad7e4caecb3f457ec0f810f3ff8340baa53ff421f181f193efc1c"
+    },
+    {
+      "start": 104291553,
+      "end_exclusive": 104474591,
+      "sha256": "8cc532344e350604849c6772940d4f1570e6e42476973c84d8a7608cacd6a5f4"
+    },
+    {
+      "start": 105019833,
+      "end_exclusive": 105251655,
+      "sha256": "172001f1d282764b544aad80840ef2a31c38d8683a33bfe1a7dc23b6fe47748f"
+    },
+    {
+      "start": 110170595,
+      "end_exclusive": 111329032,
+      "sha256": "0d2905c64c865a2f15152f347c20e1fd320daf62ceafd19fb85aa6e727aacfec"
+    },
+    {
+      "start": 116881443,
+      "end_exclusive": 118389131,
+      "sha256": "9ece5a203f2c704cf2007c17b0853048a6ecb23388c7ab9be1230d64d32977d3"
+    },
+    {
+      "start": 123604652,
+      "end_exclusive": 124682183,
+      "sha256": "749a90c37ac58c862e8eafa513f9527b2f6c1644f90e22d06a6139f797b22192"
+    },
+    {
+      "start": 130553531,
+      "end_exclusive": 132073672,
+      "sha256": "d13d2e170e26005b864e0a6ac36fc1c8cb163d6bb6a71f79338a66e771da54ee"
+    },
+    {
+      "start": 138904607,
+      "end_exclusive": 140220645,
+      "sha256": "9a529b35a94e012fb8522279a573d31412b36c552d3b82005f032c0a6d10de85"
+    },
+    {
+      "start": 147698910,
+      "end_exclusive": 148235081,
+      "sha256": "e7c88901ceb2b9e9d60a288a0523bfe9a68cb5368332ade9acb8b2abcd7008bd"
+    },
+    {
+      "start": 157122122,
+      "end_exclusive": 157194721,
+      "sha256": "abc1b19bb4ca0bac9c5c4e26f18a8554957036c05b0706b14984df39a7ebbf22"
+    },
+    {
+      "start": 165581894,
+      "end_exclusive": 165655939,
+      "sha256": "e0e6059df8d012e3d7e62a31faa32053d08e7a9973f3e9f6c5904e257f080686"
+    },
+    {
+      "start": 285175661,
+      "end_exclusive": 285233636,
+      "sha256": "1e47f6ff8a1a86b3e0e9396fef182108d7c834fcf8c925bf91098c4b2ad6897e"
+    },
+    {
+      "start": 291914782,
+      "end_exclusive": 291955334,
+      "sha256": "725a6221ce97e8745828a1b5b6f1bd92b1427803a32109c1a9df7e437aeb86b1"
+    },
+    {
+      "start": 297714229,
+      "end_exclusive": 297757223,
+      "sha256": "5572e5255d1a7cc83a22af374f06f53688d89c04d49f36ef250b6d961c85b9b7"
+    },
+    {
+      "start": 303513098,
+      "end_exclusive": 303731472,
+      "sha256": "33907da5381ce3d51c8b8770e1c28d863d148d167b39090ea2a71cb262b4f6e1"
+    },
+    {
+      "start": 309835826,
+      "end_exclusive": 310441262,
+      "sha256": "ddf688c4e37a48ff48835dedbb650208f8ac9c60919f7270aa1612e30ca182c7"
+    },
+    {
+      "start": 316240483,
+      "end_exclusive": 317627152,
+      "sha256": "6eac9d96481af0eec311d4d05f8ea8f32b4dd7597a0e26714dc99be62e5b21e7"
+    },
+    {
+      "start": 323030099,
+      "end_exclusive": 324351622,
+      "sha256": "f35b806899b79beed5a94cf5c7c1d9fe760087b4ad5839d034c760bf7bf3bfa0"
+    },
+    {
+      "start": 329961135,
+      "end_exclusive": 331722357,
+      "sha256": "e88747dab31d0d3f1f72b46f53e8aad030eabe2b70c5892848d0e7ea931ac38e"
+    },
+    {
+      "start": 336940880,
+      "end_exclusive": 338929613,
+      "sha256": "5b5105eb55fa2e3d3bca34cf5d2804e7d3b608ac51e2eeb4d7cabd57ae3bafe9"
+    },
+    {
+      "start": 343410625,
+      "end_exclusive": 345711616,
+      "sha256": "d31d96f8e5e7303760bbd5a15e9b647c1b3d1eb750cba523e764995a57a54016"
+    },
+    {
+      "start": 350200223,
+      "end_exclusive": 352483906,
+      "sha256": "06d84607802412e506bbeb7908f1e7f59fb93c0feb65f2c00f22689b1b8611ef"
+    },
+    {
+      "start": 357725233,
+      "end_exclusive": 360003853,
+      "sha256": "b8d3abe6b9f383009c3942bbae7e6bfb4b9c0e8e2fa7d79296df83771bf9649d"
+    },
+    {
+      "start": 367730263,
+      "end_exclusive": 369420781,
+      "sha256": "8b92e941f14bff82d1e0593de4c047284787f99f99868789aa3b24d434651535"
+    },
+    {
+      "start": 378337914,
+      "end_exclusive": 378500847,
+      "sha256": "33398ca0d255f8119791883f2a69a4b371d01e5fd3a56261a2aa3ea6cdb63b7e"
+    }
+  ]
+}

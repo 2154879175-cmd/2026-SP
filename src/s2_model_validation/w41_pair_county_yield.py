@@ -20,10 +20,18 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("year", type=int, choices=range(2016, 2022))
     parser.add_argument("--raster", type=Path, help="A complete raster or a verified pilot subset for the selected year")
+    parser.add_argument("--additional-stats", type=Path, help="Additional official statistics with area in ha")
+    parser.add_argument("--output", type=Path, help="Save the results to this CSV path")
     args = parser.parse_args()
     raster = args.raster or DOWNLOAD / f"{args.year}ChinaWheatYield30m.tif"
     with INPUT.open(encoding="utf-8-sig", newline="") as source:
         all_rows = list(csv.DictReader(source))
+    if args.additional_stats:
+        with args.additional_stats.open(encoding="utf-8-sig", newline="") as source:
+            for row in csv.DictReader(source):
+                row["sown_mu"] = str(float(row["sown_ha"]) * 15)
+                row["reported_kg_per_mu"] = str(float(row["reported_kg_ha"]) / 15)
+                all_rows.append(row)
     keys = [(row["province"], row["county"], row["harvest_year"]) for row in all_rows]
     if len(set(keys)) != len(keys):
         raise ValueError("Duplicate yearbook county-year")
@@ -73,7 +81,7 @@ def main():
                 "remote_area_to_stats_sown_area": f"{remote_area_ha / stats_area_ha:.5f}",
                 "scope_note": row["scope_note"], "shape_id": row["shape_id"],
             })
-    dest = OUTPUT / f"w41_county_yield_pairing_{args.year}.csv"
+    dest = args.output or OUTPUT / f"w41_county_yield_pairing_{args.year}.csv"
     with dest.open("w", encoding="utf-8", newline="") as output:
         writer = csv.DictWriter(output, fieldnames=results[0].keys(), lineterminator="\n")
         writer.writeheader()
