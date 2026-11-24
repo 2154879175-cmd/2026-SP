@@ -4,12 +4,24 @@
 
 研究面向华北冬小麦产区，使用县年统计与遥感反演单产比较相同模型的跨区、跨年表现。冀鲁两地 2017–2021 年回溯试验主分析保留 79 条县年。河南平顶山外部试点在 2019–2021 年取得 9 条配对，6 条进入主分析。两项试验在同时留出地区和未来年份时，训练均值均优于 Ridge 和随机森林。现有回溯结果覆盖三个地市的有限样本，独立站点观测仍待补充。平谷分析是项目的前期诊断。
 
-- [W47–W51 河南验证与第三次阶段评审](ManageFiles/W51_第三次阶段评审与汇总.md) · [华北单产预测诊断初稿](Paper/W51_Winter_wheat_yield_transfer_draft.md)
+- [当前论文初稿](Paper/W51_Winter_wheat_yield_transfer_draft.md) · [研究主张与证据](ManageFiles/研究主张与证据.md) · [当前研究复现](#当前研究复现)
+- [遥感标签血缘核查](Outputs/reports/w52_label_provenance.md) · [周口候选数据](Data/external/w52_zhoukou_sources.md) · [第三次阶段评审](ManageFiles/W51_第三次阶段评审与汇总.md)
 - [W40 选题、文献对照、发表条件与研究设计](ManageFiles/W40_华北题目与发表研究方案.md)
 - [新增华北数据、校验值与复现说明](Data/external/crop_yield_ncp.md)
 - [研究总览与十轮阶段评审](ManageFiles/W46_研究总览与十轮阶段评审.md)
 - [五年配对与数据来源](Outputs/reports/w43_pairing_audit.md) · [冻结划分](Outputs/reports/w44_frozen_design.md) · [模型结果与复现](Outputs/reports/w45_label_swap.md)
 - [W41 县年产量配对试点](Data/external/w41_county_yield_pairing.md) · [阶段评审](ManageFiles/W41_五轮阶段评审.md)
+
+## 当前研究复现
+
+在仓库根目录用 Python 3.12 安装依赖并运行。脚本从仓库内的冻结样本和验证划分重算冀鲁、平顶山的预测、指标和敏感性结果，并重绘论文图。运行会更新对应的结果文件，计算过程无需下载原始数据。
+
+```bash
+python -m pip install -r Outputs/repro_package/requirements_ncp.txt
+python src/reproduce_ncp.py
+```
+
+冻结输入为 [冀鲁县年](Outputs/reports/w44_frozen_panel.csv)、[冀鲁验证划分](Outputs/reports/w44_folds.csv)和[平顶山县年](Outputs/reports/w48_pds_frozen.csv)。如需从原始来源重建样本，参见[冀鲁遥感与统计配对](Outputs/reports/w43_pairing_audit.md)、[冀鲁气象与划分](Outputs/reports/w44_frozen_design.md)和[平顶山数据准备](Outputs/reports/w48_pds_frozen_design.md)。
 
 ## 平谷前期研究与版本记录
 
@@ -56,7 +68,7 @@
 └── config/                   # 配置
 ```
 
-## 一键复现
+## 平谷前期验证复现
 
 ```bash
 # 环境: Python 3.13 + pandas/numpy/sklearn/xgboost/lightgbm/quantile-forest/shap/rasterio
