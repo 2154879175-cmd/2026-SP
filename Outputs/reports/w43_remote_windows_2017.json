@@ -1,0 +1,196 @@
+{
+  "source": "https://zenodo.org/records/7360753/files/2017ChinaWheatYield30m.tif?download=1",
+  "size_bytes": 1344570264,
+  "shape_ids": [
+    "62558664B19017699647777",
+    "62558664B20399275645018",
+    "62558664B21505813865791",
+    "62558664B23456700547879",
+    "62558664B2427175042166",
+    "62558664B26028298514379",
+    "62558664B28128678550723",
+    "62558664B39400106445584",
+    "62558664B47734453637531",
+    "62558664B5316170657416",
+    "62558664B53891602886125",
+    "62558664B56936156846755",
+    "62558664B61183233454019",
+    "62558664B63422988053512",
+    "62558664B76599192346331",
+    "62558664B91235384872038",
+    "62558664B94786214414637",
+    "62558664B98712335692641"
+  ],
+  "byte_ranges": [
+    {
+      "start": 0,
+      "end_exclusive": 2500000,
+      "sha256": "03fe8dc046b5548f9852963822a40711a21fdc1ae110b8506f007d93133c3d31"
+    },
+    {
+      "start": 253623734,
+      "end_exclusive": 253661607,
+      "sha256": "815a55a70b6fec07c084cabee69f2684a5d5ad1eadbfff988b39898c6d99e74f"
+    },
+    {
+      "start": 257733549,
+      "end_exclusive": 257783349,
+      "sha256": "befef03947408b0c874d231de587f9912d62027421cedad17675563eb028117c"
+    },
+    {
+      "start": 261866587,
+      "end_exclusive": 261982183,
+      "sha256": "59792435173fda271b7cd4d6238923051b87323e3f29338c1af3db2483babf3f"
+    },
+    {
+      "start": 266193743,
+      "end_exclusive": 267216644,
+      "sha256": "481062de3cee7b7497e2b851d5272eec6d8e5fd81e68408fe0ff75a74f470a9b"
+    },
+    {
+      "start": 271138773,
+      "end_exclusive": 272668865,
+      "sha256": "ccca7050e5171772936887e00da03a77d2dd704094d80f709ae7bef77f3c628c"
+    },
+    {
+      "start": 276450865,
+      "end_exclusive": 277911548,
+      "sha256": "580dd0040351e1abdd5018e03b22203916c708b8b044114c5df747d5bbab2ea1"
+    },
+    {
+      "start": 282251812,
+      "end_exclusive": 284780007,
+      "sha256": "649ba179aba1e03fe3c65fc8cc796f75b4ee97be42d18ba99f793bd9cc347ad3"
+    },
+    {
+      "start": 288416631,
+      "end_exclusive": 291218810,
+      "sha256": "4511a3b9b807ed8b932cf6c23e749c762c98141592d30c456116a2d1071b3540"
+    },
+    {
+      "start": 295213839,
+      "end_exclusive": 297411509,
+      "sha256": "7c8fd7181ad0f4cf59c51bcd8aa05c889e7e5532d85cd95211d12ab258f57c6f"
+    },
+    {
+      "start": 301986190,
+      "end_exclusive": 303629913,
+      "sha256": "9270b4cb95eef4c42a9a92cfdb6596430a5e8706dd43a7202a69d2dd8a2871ed"
+    },
+    {
+      "start": 308703969,
+      "end_exclusive": 309420405,
+      "sha256": "bc9cc9df48aa89d190c55482bf4cbf73b1281c61c38d96f4ebc552ad8dbaf685"
+    },
+    {
+      "start": 316017503,
+      "end_exclusive": 316258528,
+      "sha256": "44f76c6f3a35bcec787b49d1acbcf29d76a95c6500334dd238dd6440ff0607d5"
+    },
+    {
+      "start": 321341076,
+      "end_exclusive": 322369504,
+      "sha256": "592c0abaaf9f1e840fd284e61ff536152b61a6d65c0935efc5d0d14a325db628"
+    },
+    {
+      "start": 327767673,
+      "end_exclusive": 328988658,
+      "sha256": "31723c299e527f661e37f658a31a2b130762e2d011981a67ecaffe3afed74ec1"
+    },
+    {
+      "start": 333846616,
+      "end_exclusive": 335059987,
+      "sha256": "ac0c0a63b7b0c6b0f5debcd346b31ec05ea778fa7be1f972c337af423f93afd4"
+    },
+    {
+      "start": 339422917,
+      "end_exclusive": 340901024,
+      "sha256": "e03759aec32599f636ffc3cd299bbab19786204aa4214e9291364fe03e100103"
+    },
+    {
+      "start": 346495402,
+      "end_exclusive": 347877393,
+      "sha256": "a983e76bbc661b086e6f96fab2eecbd234625e8e457534dd672ca1b198a9e577"
+    },
+    {
+      "start": 353939693,
+      "end_exclusive": 354626445,
+      "sha256": "9a22527c6c137569c9c5e6d742a232b636c1d5fdede52886ced3e465e8ab1237"
+    },
+    {
+      "start": 362153626,
+      "end_exclusive": 362294513,
+      "sha256": "38fe34583e2c51ccf62f882bef196c7402827a111bd0f5942461b05dddc6f79a"
+    },
+    {
+      "start": 369452482,
+      "end_exclusive": 369541521,
+      "sha256": "63b438c5f10055eb7398b0574d7f69e3eacd05bc4f438fc959a6c05ed335d437"
+    },
+    {
+      "start": 503119497,
+      "end_exclusive": 503163670,
+      "sha256": "623796e1d20b49a2cb6435f29ca53707589aa97337118258eb4b691c2ba0b95b"
+    },
+    {
+      "start": 510007241,
+      "end_exclusive": 510040072,
+      "sha256": "e2a848ff22288082fb45060bb9148716ec6f632aba801b10be0e7254c330608e"
+    },
+    {
+      "start": 515585889,
+      "end_exclusive": 515739133,
+      "sha256": "f3c6228f43410235464e2714686f41e0f35c5df9fdefcb2e7cdb2c1af7ef5793"
+    },
+    {
+      "start": 521919769,
+      "end_exclusive": 522424735,
+      "sha256": "93d512b0d566897f11f2fc0e67a9fc41a5ae7deae2f767082f492f5ddf885279"
+    },
+    {
+      "start": 528406417,
+      "end_exclusive": 529687939,
+      "sha256": "3131c5fec52a3d2d215af9fee1d0bb6a017a969d17921b4d94da289e0b858b85"
+    },
+    {
+      "start": 536629320,
+      "end_exclusive": 537839423,
+      "sha256": "ef0e15ba8ca4d4f2d2f797c67d82bb9377aca518317573ae20b4b0da0cccedf1"
+    },
+    {
+      "start": 545278548,
+      "end_exclusive": 546808398,
+      "sha256": "1129812a8c9e628e2ecee415dd1af988f919559a045cac85c96f016f9e58b847"
+    },
+    {
+      "start": 552767180,
+      "end_exclusive": 554438262,
+      "sha256": "1862a3785f8922f51e69628e39129b90285d3071acd0964a22ec3f4cd78e1bd3"
+    },
+    {
+      "start": 559721190,
+      "end_exclusive": 561530471,
+      "sha256": "ac04195ac437189d42371a15f6f05206fa3218446d0554a392c80a793af05e40"
+    },
+    {
+      "start": 566284590,
+      "end_exclusive": 568044569,
+      "sha256": "b324bd7c49e056d9346b14b34f460dd89ba132832eb87d19377217ef528a2771"
+    },
+    {
+      "start": 573166077,
+      "end_exclusive": 574640125,
+      "sha256": "588cf862ff62d9b0e9989243934ce00ab42dfbae70ad0860ca9dfc7eea6003b1"
+    },
+    {
+      "start": 581878201,
+      "end_exclusive": 583183287,
+      "sha256": "97eb572fb7eaf13f78d1c2b59336a075c2f8dbe801161c70836dced812be6bee"
+    },
+    {
+      "start": 592240656,
+      "end_exclusive": 592520957,
+      "sha256": "35030f50fde19138f891cca3004cc35e9891f4bbbbf3f5b898ab8ca9a6fd41c8"
+    }
+  ]
+}
