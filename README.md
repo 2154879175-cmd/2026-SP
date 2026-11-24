@@ -2,8 +2,9 @@
 
 *Spatiotemporal Generalization of Winter Wheat Yield Prediction in the North China Plain: Environmental Fingerprint Models Across Yield Data Sources*
 
-主研究区为华北平原冬小麦主产区。使用县年统计与遥感反演单产比较相同模型的跨区、跨年表现，并探索独立站点观测验证。当前已完成冀鲁两区 2017–2021 年的回溯试验。主分析保留 79 条县年，同时留区留年时训练均值优于 Ridge 和随机森林。新区域验证仍待补充。平谷分析是项目的前期诊断。
+研究面向华北冬小麦产区，使用县年统计与遥感反演单产比较相同模型的跨区、跨年表现。冀鲁两地 2017–2021 年回溯试验主分析保留 79 条县年。河南平顶山外部试点在 2019–2021 年取得 9 条配对，6 条进入主分析。两项试验在同时留出地区和未来年份时，训练均值均优于 Ridge 和随机森林。现有回溯结果覆盖三个地市的有限样本，独立站点观测仍待补充。平谷分析是项目的前期诊断。
 
+- [W47–W51 河南验证与第三次阶段评审](ManageFiles/W51_第三次阶段评审与汇总.md) · [华北单产预测诊断初稿](Paper/W51_Winter_wheat_yield_transfer_draft.md)
 - [W40 选题、文献对照、发表条件与研究设计](ManageFiles/W40_华北题目与发表研究方案.md)
 - [新增华北数据、校验值与复现说明](Data/external/crop_yield_ncp.md)
 - [研究总览与十轮阶段评审](ManageFiles/W46_研究总览与十轮阶段评审.md)
